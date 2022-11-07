@@ -1,13 +1,13 @@
-pipeline {
+pipeline{
 agent any 
     stage(Ejercicio3 con groovy)
-      steps {
+      steps{
         echo "Ejercicio 3 con groovy"
-        script {
+        script{
           def release = readYaml(file: 'release.yml')
           println release.getClass().getName()
           release.each{k,v->
-          println "La versión de " + k + " es: " +v
+          println "La versión de " + k + " es: " + v
             }
         }
     }
