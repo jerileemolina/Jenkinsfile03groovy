@@ -7,7 +7,7 @@ agent any
           def release = readYaml(file: 'release.yml')
           println release.getClass().getName()
           release.each{k,v->
-          println "La versión de " + k + "es: " +v
+          println "La versión de " + k + " es: " +v
             }
         }
     }
