@@ -8,6 +8,7 @@ agent any
           File archivo = new File('release.yml')
           archivo.eachLine { linea ->
              println linea 
+             
                     }
                 }
             }
