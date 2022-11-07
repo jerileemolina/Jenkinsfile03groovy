@@ -1,14 +1,14 @@
 pipeline {
 agent any 
-    stages {
-        stage ('Ejercicio 3') {
-            steps {
-                echo "Ejercicio 3 con groovy"
-                script{
-                    File archivo = new File('release.yml')
-                    archivo.eachLine { linea ->
-                        println linea
-                    }
+    stage("release groovy") {
+        steps{
+            echo "SIN BASH bucle.........................."
+            script {
+                def release = readYaml (file: 'release.yml')
+                //para saber que tipo de variable es
+                println release.getClass().getName()
+                release.each{k,v->
+                    println "La versión de " + k + " es: " + v
                 }
             }
         }
