@@ -10,6 +10,10 @@ pipeline {
                     println release.getClass().getName()
                     release.each{k,v->
                         println "La versión de " + k + " es: " + v
+                    // modificar valores de yaml
+                    prop.setProperty("k", "v");
+                    prop.setProperty("APP_JAVA_INT", "0.0.5");
+                        println " La versión de " + k + "ahora es:" + def var = null
                     }
                 }
             }
