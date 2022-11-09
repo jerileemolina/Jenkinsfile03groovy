@@ -10,7 +10,7 @@ pipeline {
                     //para saber que tipo de variable es (la variable es tipo de HashMap)
                     println release.getClass().getName()
                     // Cambio valores de la variable release (tipo HashMap)
-                    release.put("one", "Alex");
+                    release.put("one", "Alex")
 
 
                     //Mostrar que ha hecho el cambio en la variable
