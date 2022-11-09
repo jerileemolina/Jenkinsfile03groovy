@@ -18,7 +18,7 @@ pipeline {
 
                     // Meter los datos de la variable en un archivo nuevo llamado igual, y lo sobreescribe
                     //WriteYaml Overwrite)
-                    writeYaml file: release, data: data, overwrite: true
+                    writeYaml file: "release.yml", data: release, overwrite: true
 
 
 
