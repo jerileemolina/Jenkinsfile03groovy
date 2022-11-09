@@ -24,7 +24,7 @@ pipeline {
                     }
 
                     if (añadir == 1 ) {
-                        println "La versión de " + nombre + "es " + version
+                        println "La versión de " + nombre + " es " + version
                     }
                         
 
