@@ -22,8 +22,6 @@ pipeline {
 
                     sh('cat release.yml')
 
-
-
                     }
                 }
             }
