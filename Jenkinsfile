@@ -12,7 +12,6 @@ pipeline {
                     // Cambio valores de la variable release (tipo HashMap)
                     release.put("APP_JAVA_INT", '0.0.10')
 
-
                     //Mostrar que ha hecho el cambio en la variable
                     release.each{k,v->
                         println "La versión de " + k + " es: " + v
