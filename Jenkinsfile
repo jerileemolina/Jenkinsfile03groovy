@@ -10,6 +10,7 @@ pipeline {
                     //para saber que tipo de variable es (la variable es tipo de HashMap)
                     println release.getClass().getName()
                     // Cambio valores de la variable release (tipo HashMap)
+                    println "La versión de " + k + "ahora es: " + v
                     release.put("APP_JAVA_INT", '0.0.10')
 
 
