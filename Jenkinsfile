@@ -20,6 +20,8 @@ pipeline {
                     //WriteYaml Overwrite)
                     writeYaml file: "release.yml", data: release, overwrite: true
 
+                    sh('cat release.yml')
+
 
 
                     }
